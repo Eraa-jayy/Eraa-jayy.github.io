@@ -113,8 +113,8 @@ const HeroSection = () => {
             {/* Stats bar */}
             <div className="flex items-center gap-0 mt-10 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
               {[
-                { num: "5+", label: "Experiences" },
-                { num: "20+", label: "Project done" },
+                { num: "5+", label: "Certifications" },
+                { num: "20+", label: "Projects done" },
                 { num: "80+", label: "Happy Clients" },
               ].map((stat, i) => (
                 <div
