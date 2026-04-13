@@ -40,9 +40,9 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-6">
         <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
-            My <span className="text-gradient">Projects</span>
+            My <span className="text-primary">Projects</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full" />
 
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project) => (
@@ -67,16 +67,10 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
+                  <a href={project.github} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                     <Github size={16} /> Code
                   </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
-                  >
+                  <a href={project.demo} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                     <ExternalLink size={16} /> Demo
                   </a>
                 </div>
