@@ -2,10 +2,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { GraduationCap, Briefcase, Brain, Code } from "lucide-react";
 
 const highlights = [
-  { icon: GraduationCap, label: "CS Undergraduate" },
-  { icon: Briefcase, label: "PM & BA Interest" },
-  { icon: Brain, label: "AI Enthusiast" },
-  { icon: Code, label: "Full-Stack Dev" },
+  { icon: GraduationCap, label: "Computer Science Undergraduate" },
+  { icon: Briefcase, label: "High interest in Project Management" },
+  { icon: Brain, label: "Aspiring Business Analyst" },
+  { icon: Code, label: "Front-end Developer" },
 ];
 
 const AboutSection = () => {
