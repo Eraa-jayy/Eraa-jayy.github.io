@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Mail, Linkedin, Github, Copy, Check, Send } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
+
 
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -53,7 +55,7 @@ const ContactSection = () => {
                 </button>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/eraa-jayy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
@@ -61,11 +63,11 @@ const ContactSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Linkedin size={18} className="text-primary" />
                   </div>
-                  <span className="text-sm">LinkedIn Profile</span>
+                  <span className="text-sm">LinkedIn</span>
                 </a>
 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Eraa-jayy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
@@ -73,7 +75,7 @@ const ContactSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Github size={18} className="text-primary" />
                   </div>
-                  <span className="text-sm">GitHub Profile</span>
+                  <span className="text-sm">GitHub</span>
                 </a>
               </div>
             </div>

@@ -1,11 +1,11 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { GraduationCap, Briefcase, Brain, Code } from "lucide-react";
+import { GraduationCap, Briefcase, Brain, Code, Compass, Code2 } from "lucide-react";
 
 const highlights = [
   { icon: GraduationCap, label: "Computer Science Undergraduate" },
   { icon: Briefcase, label: "High interest in Project Management" },
-  { icon: Brain, label: "Aspiring Business Analyst" },
-  { icon: Code, label: "Front-end Developer" },
+  { icon: Compass, label: "Aspiring Business Analyst" },
+  { icon: Code2, label: "Front-end Developer" },
 ];
 
 const AboutSection = () => {
@@ -14,7 +14,10 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24">
       <div className="container mx-auto px-6">
-        <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <div
+          ref={ref}
+          className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+        >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
             About <span className="text-primary">Me</span>
           </h2>
@@ -23,18 +26,27 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm a Computer Science undergraduate with a strong passion for technology and business.
-                My academic journey has given me a solid foundation in software development, data analysis,
-                and project management methodologies.
+                I am a Computer Science undergraduate with a strong interest in
+                both Project Management and Business Analysis. I am
+                passionate about understanding how projects are planned,
+                structured, and delivered effectively while ensuring that
+                business goals are clearly defined and achieved.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm actively seeking opportunities in Project Management, Business Analysis, and
-                Software Development where I can leverage my technical skills and analytical mindset
-                to drive meaningful impact.
+                I enjoy analyzing problems, gathering requirements, and
+                translating them into clear, actionable solutions. Alongside my
+                technical background, I am developing strong communication,
+                teamwork, and organizational skills, which are essential for
+                coordinating between stakeholders and development teams. I am
+                particularly interested in how business needs are aligned with
+                technical solutions to create successful outcomes.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Beyond coding, I'm fascinated by how technology can solve real-world problems.
-                I enjoy learning about AI, agile methodologies, and system design.
+                My goal is to build a career in Project Management or Business Analysis where I can contribute
+                to managing projects efficiently and improving business
+                processes. I am eager to gain industry experience, develop my
+                analytical thinking further, and grow into a professional who
+                can bridge the gap between business and technology effectively.
               </p>
             </div>
 

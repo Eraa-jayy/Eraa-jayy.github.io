@@ -5,10 +5,10 @@ const Footer = () => (
     <div className="container mx-auto px-6">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Eranda Jayawardana. All rights reserved.
         </p>
 
-        <div className="flex items-center gap-6">
+        {/* <div className="flex items-center gap-6">
           {["Home", "About", "Projects", "Contact"].map((link) => (
             <a
               key={link}
@@ -30,7 +30,7 @@ const Footer = () => (
           <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
             <Mail size={18} />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   </footer>

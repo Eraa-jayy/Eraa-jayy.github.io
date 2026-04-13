@@ -4,9 +4,9 @@ import logo from "@/assets/logo.jpg";
 
 const navLinks = [
   { label: "Home", id: "home" },
-  { label: "Services", id: "skills" },
+  { label: "Skills", id: "skills" },
   { label: "About me", id: "about" },
-  { label: "Portfolio", id: "projects" },
+  { label: "Projects", id: "projects" },
   { label: "Contact me", id: "contact" },
 ];
 

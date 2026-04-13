@@ -1,25 +1,26 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Code, Database, GitBranch, Layout, Users, MessageSquare, Lightbulb, BarChart } from "lucide-react";
+import { Code, Database, GitBranch, Layout, Users, MessageSquare, Lightbulb, BarChart, Code2, Layers, Workflow, Figma, KanbanIcon, KanbanSquare, Brackets, Coffee, Cpu } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Technical Skills",
     skills: [
-      { name: "Java", level: 85, icon: Code },
-      { name: "C#", level: 75, icon: Code },
-      { name: "HTML/CSS/JS", level: 90, icon: Layout },
-      { name: "React", level: 70, icon: Layout },
-      { name: "SQL & Databases", level: 80, icon: Database },
-      { name: "Python", level: 70, icon: Code },
+      { name: "Java", level: 75, icon: Coffee },
+      { name: "C", level: 85, icon: Cpu },
+      // { name: "C#", level: 75, icon: Code2 },
+      { name: "HTML/CSS/JS", level: 90, icon: Brackets },
+      { name: "React / Tailwind CSS", level: 80, icon: Layers },
+      { name: "MySQL", level: 75, icon: Database },
+      // { name: "Python", level: 70, icon: Code },
     ],
   },
   {
     title: "Tools & Platforms",
     skills: [
       { name: "Git & GitHub", level: 85, icon: GitBranch },
-      { name: "Trello / Jira", level: 80, icon: BarChart },
-      { name: "Figma", level: 65, icon: Layout },
-      { name: "VS Code", level: 90, icon: Code },
+      { name: "Trello / Jira", level: 90, icon: KanbanSquare},
+      { name: "Figma", level: 75, icon: Figma },
+      { name: "Draw.io", level: 90, icon: Workflow },
     ],
   },
   {

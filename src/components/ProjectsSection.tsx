@@ -3,29 +3,33 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Hospital Management System",
-    description: "A comprehensive system for managing patient records, appointments, and hospital operations with role-based access control.",
-    tech: ["Java", "MySQL", "JavaFX"],
-    github: "#",
+    title: "Healthify - Personal Healthcare Monitoring System",
+    description:
+      "Healthify is a web-based system that helps users store, track, and analyze their health data in one place. It provides visual insights, medication reminders, and secure data sharing with doctors to improve personal healthcare management.",
+    tech: ["React / Tailwind CSS", "Java / SpringBoot", "REST APIs"],
+    github: "https://github.com/IndikaMadhushan/Healthify-FrontEnd",
     demo: "#",
   },
   {
-    title: "E-Commerce Console App",
-    description: "A console-based e-commerce application featuring product browsing, shopping cart, and order management functionalities.",
+    title: "Police Information Management System",
+    description:
+      "A centralized digital platform that manages police records and enables the public to submit entries, request reports, and apply for services like firearm permits online, improving accessibility and efficiency.",
     tech: ["C#", ".NET", "SQL Server"],
-    github: "#",
+    github: "https://github.com/IndikaMadhushan/Police-info-management-System",
     demo: "#",
   },
   {
-    title: "Spinner Game App",
-    description: "An interactive spinner game application with customizable options, animations, and score tracking.",
-    tech: ["JavaScript", "HTML/CSS", "Canvas API"],
-    github: "#",
+    title: "Text-to-Speech Converter",
+    description:
+      "A JavaScript Text-to-Speech Converter is a web tool that converts written text into spoken audio using the Web Speech API. It allows users to input text and hear it instantly in a selected voice, making web content more interactive and accessible.",
+    tech: ["JavaScript", "HTML/CSS", "Web Speech API"],
+    github: "https://github.com/Eraa-jayy/Text-to-Speech-Converter",
     demo: "#",
   },
   {
     title: "Portfolio Website",
-    description: "A modern, responsive personal portfolio built with React and TypeScript showcasing projects and skills.",
+    description:
+      "A modern, responsive personal portfolio built with React and TypeScript showcasing projects and skills.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "#",
     demo: "#",
@@ -38,7 +42,10 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
-        <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <div
+          ref={ref}
+          className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+        >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
             My <span className="text-primary">Projects</span>
           </h2>
@@ -67,12 +74,18 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href={project.github} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href={project.github}
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Github size={16} /> Code
                   </a>
-                  <a href={project.demo} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                  {/* <a
+                    href={project.demo}
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <ExternalLink size={16} /> Demo
-                  </a>
+                  </a> */}
                 </div>
               </div>
             ))}
