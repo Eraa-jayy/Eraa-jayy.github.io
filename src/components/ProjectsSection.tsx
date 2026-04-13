@@ -3,29 +3,29 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Personal Healthcare Monitoring System - Healthify",
-    description: "Healthify is a web-based system that helps users store, track, and analyze their health data in one place. It provides visual insights, medication reminders, and secure data sharing with doctors to improve personal healthcare management.",
-    tech: ["Java / Spring Boot", "React / Tailwind CSS", "MySQL"],
+    title: "Hospital Management System",
+    description: "A comprehensive system for managing patient records, appointments, and hospital operations with role-based access control.",
+    tech: ["Java", "MySQL", "JavaFX"],
     github: "#",
     demo: "#",
   },
   {
-    title: "Police Information Management System",
-    description: "A centralized digital platform that manages police records and enables the public to submit entries, request reports, and apply for services like firearm permits online, improving accessibility and efficiency.",
+    title: "E-Commerce Console App",
+    description: "A console-based e-commerce application featuring product browsing, shopping cart, and order management functionalities.",
     tech: ["C#", ".NET", "SQL Server"],
     github: "#",
     demo: "#",
   },
   {
-    title: "Text to Speech Generator",
-    description: "A JavaScript Text-to-Speech generator is a web tool that converts written text into spoken audio using the Web Speech API. It allows users to input text and hear it instantly in a selected voice, making web content more interactive and accessible.",
+    title: "Spinner Game App",
+    description: "An interactive spinner game application with customizable options, animations, and score tracking.",
     tech: ["JavaScript", "HTML/CSS", "Canvas API"],
     github: "#",
     demo: "#",
   },
   {
     title: "Portfolio Website",
-    description: "A JavaScript Text-to-Speech generator is a web tool that converts written text into spoken audio using the Web Speech API. It allows users to input text and hear it instantly in a selected voice, making web content more interactive and accessible.",
+    description: "A modern, responsive personal portfolio built with React and TypeScript showcasing projects and skills.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "#",
     demo: "#",

@@ -8,7 +8,7 @@ const ContactSection = () => {
   const [copied, setCopied] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const email = "erandajayawardana25@gmail.com";
+  const email = "your.email@example.com";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -61,7 +61,7 @@ const ContactSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Linkedin size={18} className="text-primary" />
                   </div>
-                  <span className="text-sm">LinkedIn</span>
+                  <span className="text-sm">LinkedIn Profile</span>
                 </a>
 
                 <a
@@ -73,7 +73,7 @@ const ContactSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Github size={18} className="text-primary" />
                   </div>
-                  <span className="text-sm">GitHub</span>
+                  <span className="text-sm">GitHub Profile</span>
                 </a>
               </div>
             </div>
@@ -93,7 +93,7 @@ const ContactSection = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="Subject"
+                  placeholder="Your Email"
                   required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}

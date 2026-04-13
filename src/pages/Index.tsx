@@ -6,11 +6,9 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import FloatingParticles from "@/components/FloatingParticles";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
-    <FloatingParticles />
     <Navbar />
     <HeroSection />
     <AboutSection />
