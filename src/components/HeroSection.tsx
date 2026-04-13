@@ -131,15 +131,16 @@ const HeroSection = () => {
 
           {/* Right - profile image */}
           <div className="hidden lg:flex justify-center items-center relative">
-            {/* Large circle glow behind */}
-            <div className="absolute w-[420px] h-[420px] rounded-full bg-muted/30 border border-border/20" />
-            <div className="absolute w-[340px] h-[340px] rounded-full bg-secondary/40" />
+            {/* Outer glow ring */}
+            <div className="absolute w-[380px] h-[380px] rounded-full bg-primary/5 border border-primary/10" />
+            {/* Inner glow */}
+            <div className="absolute w-[320px] h-[320px] rounded-full bg-secondary/30" />
 
-            <div className="relative z-10">
+            <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-4 border-primary/30 glow-primary z-10">
               <img
                 src={profileImg}
                 alt="Profile"
-                className="w-[350px] h-[450px] object-cover object-top rounded-b-[200px] grayscale contrast-110"
+                className="w-full h-full object-cover"
                 width={512}
                 height={640}
               />
