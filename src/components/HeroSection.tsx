@@ -142,22 +142,20 @@ const HeroSection = () => {
           </div>
 
           {/* Right - profile image */}
-          <div className="hidden lg:flex justify-center items-center relative">
+          <div className="flex justify-center items-center relative mt-10 lg:mt-0">
+            {" "}
             {/* OUTER PULSE RING */}
             <div className="absolute w-[380px] h-[380px] rounded-full border border-primary/20 animate-ping opacity-40" />
-
             {/* SECOND ROTATING RING */}
             <div className="absolute w-[360px] h-[360px] rounded-full border border-primary/30 animate-spin-slow" />
-
             {/* SHARP INNER GLOW RING */}
             <div className="absolute w-[320px] h-[320px] rounded-full border border-primary/40 shadow-[0_0_40px_rgba(249,115,22,0.25)]" />
-
             {/* IMAGE CIRCLE */}
             <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-2 border-primary/50 z-10 shadow-xl">
               <img
                 src={eraaa}
                 alt="profile"
-                className="h-80% w-30% object-cover"
+                className="w-full h-full object-cover object-[20%_25%]"
               />
             </div>
           </div>
