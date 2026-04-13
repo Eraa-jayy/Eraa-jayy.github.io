@@ -1,26 +1,31 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const navLinks = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
+const navLinks = [
+  { label: "Home", id: "home" },
+  { label: "Services", id: "skills" },
+  { label: "About me", id: "about" },
+  { label: "Portfolio", id: "projects" },
+  { label: "Contact me", id: "contact" },
+];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("home");
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-
       const total = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress((window.scrollY / total) * 100);
 
-      const sections = navLinks.map((l) => l.toLowerCase());
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
+      const ids = navLinks.map((l) => l.id);
+      for (let i = ids.length - 1; i >= 0; i--) {
+        const el = document.getElementById(ids[i]);
         if (el && el.getBoundingClientRect().top <= 100) {
-          setActive(navLinks[i]);
+          setActive(ids[i]);
           break;
         }
       }
@@ -30,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMobileOpen(false);
   };
 
@@ -43,31 +48,31 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#home" className="font-heading text-2xl font-bold text-gradient">
-            Portfolio
+          <a href="#home" className="font-heading text-2xl font-bold">
+            <span className="text-primary">L</span>
+            <span className="text-foreground">OGO</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
-                key={link}
-                onClick={() => scrollTo(link)}
+                key={link.id}
+                onClick={() => scrollTo(link.id)}
                 className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                  active === link ? "text-primary" : "text-muted-foreground"
+                  active === link.id ? "text-primary" : "text-muted-foreground"
                 }`}
               >
-                {link}
+                {link.label}
               </button>
             ))}
           </div>
 
-          <a
-            href="#contact"
-            onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}
-            className="hidden md:inline-flex items-center px-5 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm transition-all hover:brightness-110 glow-primary"
+          <button
+            onClick={() => scrollTo("contact")}
+            className="hidden md:inline-flex items-center px-5 py-2 rounded-md bg-primary text-primary-foreground font-medium text-sm transition-all hover:brightness-110"
           >
             Hire Me
-          </a>
+          </button>
 
           <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -79,15 +84,21 @@ const Navbar = () => {
             <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
-                  key={link}
-                  onClick={() => scrollTo(link)}
+                  key={link.id}
+                  onClick={() => scrollTo(link.id)}
                   className={`text-left text-sm font-medium py-2 transition-colors ${
-                    active === link ? "text-primary" : "text-muted-foreground"
+                    active === link.id ? "text-primary" : "text-muted-foreground"
                   }`}
                 >
-                  {link}
+                  {link.label}
                 </button>
               ))}
+              <button
+                onClick={() => scrollTo("contact")}
+                className="mt-2 px-5 py-2 rounded-md bg-primary text-primary-foreground font-medium text-sm w-full"
+              >
+                Hire Me
+              </button>
             </div>
           </div>
         )}
