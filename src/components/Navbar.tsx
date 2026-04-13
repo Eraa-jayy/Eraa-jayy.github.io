@@ -49,8 +49,8 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#home" className="font-heading text-2xl font-bold">
-            <span className="text-primary">L</span>
-            <span className="text-foreground">OGO</span>
+            <span className="text-primary">ERANDA JAYAWARDANA</span>
+            <span className="text-foreground"></span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
