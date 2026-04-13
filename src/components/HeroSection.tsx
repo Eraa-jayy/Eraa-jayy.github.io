@@ -102,6 +102,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="/cv.pdf"
+                download="Eranda_Jayawardana_CV.pdf"
                 className="inline-flex items-center gap-2 px-8 py-3 rounded-md border border-muted-foreground/40 text-foreground font-semibold text-sm transition-all hover:border-primary hover:text-primary"
               >
                 Download CV
