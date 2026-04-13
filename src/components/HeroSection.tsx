@@ -65,9 +65,9 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-5">
-            <p className="text-muted-foreground text-lg tracking-wide">Hi I am</p>
+            <p className="text-muted-foreground text-lg tracking-wide">Hello! It's </p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
-              Your Name
+              Eranda Jayawardana
             </h2>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               <span>{typedText}</span>
