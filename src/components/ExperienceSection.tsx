@@ -4,24 +4,24 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 const timeline = [
   {
     icon: GraduationCap,
-    title: "BSc (Hons) Computer Science",
-    org: "Your University",
+    title: "BCS(General) Computer Science",
+    org: "University of Ruhuna - Department of Computer Science",
     period: "2022 – Present",
-    description: "Studying core CS subjects including software engineering, databases, algorithms, AI, and project management.",
+    description: "Studying core Computer Science subjects including Software Engineering, Database Management, Data Structures & Algorithms and Project Management.",
   },
   {
     icon: Award,
     title: "Certifications",
-    org: "Online Platforms",
+    org: "Linkedin Learning, Alison Learning",
     period: "2023 – Present",
-    description: "Completed courses in Agile/Scrum, Business Analysis Fundamentals, and Web Development.",
+    description: "Completed \nCareer Essentials in Project Management by Microsoft and LinkedIn, \n \nAI Chat Prompts for Business Analysis (IIBA), \nPractice Exam 1 for PMI by Project Management Professional (PMP)",
   },
   {
     icon: BookOpen,
     title: "Currently Learning",
     org: "Self-Directed",
     period: "2024 – Present",
-    description: "Exploring cloud computing, advanced React patterns, data analytics with Python, and UX research methods.",
+    description: "AI applications in Project Management and Business Analysis, Prompt Engineering to improve interaction with Artificial Intelligence systems ",
   },
 ];
 
