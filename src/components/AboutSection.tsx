@@ -16,24 +16,24 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
-            About <span className="text-gradient">Me</span>
+            About <span className="text-primary">Me</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full" />
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm a Computer Science undergraduate with a strong passion for technology and business. 
-                My academic journey has given me a solid foundation in software development, data analysis, 
+                I'm a Computer Science undergraduate with a strong passion for technology and business.
+                My academic journey has given me a solid foundation in software development, data analysis,
                 and project management methodologies.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm actively seeking opportunities in Project Management, Business Analysis, and 
-                Software Development where I can leverage my technical skills and analytical mindset 
+                I'm actively seeking opportunities in Project Management, Business Analysis, and
+                Software Development where I can leverage my technical skills and analytical mindset
                 to drive meaningful impact.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Beyond coding, I'm fascinated by how technology can solve real-world problems. 
+                Beyond coding, I'm fascinated by how technology can solve real-world problems.
                 I enjoy learning about AI, agile methodologies, and system design.
               </p>
             </div>
