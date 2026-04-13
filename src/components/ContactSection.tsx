@@ -4,13 +4,12 @@ import { Mail, Linkedin, Github, Copy, Check, Send } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
-
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [copied, setCopied] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const email = "your.email@example.com";
+  const email = "erandajayawardhane25@gmail.com";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -21,14 +20,17 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! (Demo only)");
+    toast.success("Message sent!");
     setForm({ name: "", email: "", message: "" });
   };
 
   return (
     <section id="contact" className="py-24">
       <div className="container mx-auto px-6">
-        <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <div
+          ref={ref}
+          className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+        >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
             Get In <span className="text-gradient">Touch</span>
           </h2>
@@ -38,8 +40,8 @@ const ContactSection = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm always open to discussing new opportunities, collaborations, or just chatting about tech.
-                Feel free to reach out!
+                I'm always open to discussing new opportunities, collaborations,
+                or just chatting about tech. Feel free to reach out!
               </p>
 
               <div className="space-y-4">
@@ -51,7 +53,11 @@ const ContactSection = () => {
                     <Mail size={18} className="text-primary" />
                   </div>
                   <span className="text-sm">{email}</span>
-                  {copied ? <Check size={16} className="text-accent" /> : <Copy size={16} className="text-muted-foreground" />}
+                  {copied ? (
+                    <Check size={16} className="text-accent" />
+                  ) : (
+                    <Copy size={16} className="text-muted-foreground" />
+                  )}
                 </button>
 
                 <a
@@ -108,7 +114,9 @@ const ContactSection = () => {
                   required
                   rows={5}
                   value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                  onChange={(e) =>
+                    setForm({ ...form, message: e.target.value })
+                  }
                   className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm resize-none"
                 />
               </div>

@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 import { useTypingAnimation } from "@/hooks/useTypingAnimation";
-import profileImg from "@/assets/profile.jpg";
+import eraaa from "@/assets/eraaa.png";
 
 const socialLinks = [
   // {
@@ -120,7 +120,6 @@ const HeroSection = () => {
             {/* Stats bar */}
             <div className="flex items-center gap-0 mt-10 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
               {[
-                
                 { num: "5", label: "Projects done" },
                 { num: "4", label: "Certifications" },
                 // { num: "80+", label: "Happy Clients" },
@@ -144,18 +143,21 @@ const HeroSection = () => {
 
           {/* Right - profile image */}
           <div className="hidden lg:flex justify-center items-center relative">
-            {/* Outer glow ring */}
-            <div className="absolute w-[380px] h-[380px] rounded-full bg-primary/5 border border-primary/10" />
-            {/* Inner glow */}
-            <div className="absolute w-[320px] h-[320px] rounded-full bg-secondary/30" />
+            {/* OUTER PULSE RING */}
+            <div className="absolute w-[380px] h-[380px] rounded-full border border-primary/20 animate-ping opacity-40" />
 
-            <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-4 border-primary/30 glow-primary z-10">
+            {/* SECOND ROTATING RING */}
+            <div className="absolute w-[360px] h-[360px] rounded-full border border-primary/30 animate-spin-slow" />
+
+            {/* SHARP INNER GLOW RING */}
+            <div className="absolute w-[320px] h-[320px] rounded-full border border-primary/40 shadow-[0_0_40px_rgba(249,115,22,0.25)]" />
+
+            {/* IMAGE CIRCLE */}
+            <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-2 border-primary/50 z-10 shadow-xl">
               <img
-                src={profileImg}
-                alt="Profile"
-                className="w-full h-full object-cover"
-                width={512}
-                height={640}
+                src={eraaa}
+                alt="profile"
+                className="h-80% w-30% object-cover"
               />
             </div>
           </div>
