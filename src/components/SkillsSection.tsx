@@ -1,0 +1,80 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Code, Database, GitBranch, Layout, Users, MessageSquare, Lightbulb, BarChart } from "lucide-react";
+
+const skillCategories = [
+  {
+    title: "Technical Skills",
+    skills: [
+      { name: "Java", level: 85, icon: Code },
+      { name: "C#", level: 75, icon: Code },
+      { name: "HTML/CSS/JS", level: 90, icon: Layout },
+      { name: "React", level: 70, icon: Layout },
+      { name: "SQL & Databases", level: 80, icon: Database },
+      { name: "Python", level: 70, icon: Code },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      { name: "Git & GitHub", level: 85, icon: GitBranch },
+      { name: "Trello / Jira", level: 80, icon: BarChart },
+      { name: "Figma", level: 65, icon: Layout },
+      { name: "VS Code", level: 90, icon: Code },
+    ],
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      { name: "Leadership", level: 85, icon: Users },
+      { name: "Communication", level: 90, icon: MessageSquare },
+      { name: "Problem Solving", level: 88, icon: Lightbulb },
+      { name: "Team Collaboration", level: 92, icon: Users },
+    ],
+  },
+];
+
+const SkillsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
+  return (
+    <section id="skills" className="py-24 bg-secondary/20">
+      <div className="container mx-auto px-6">
+        <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
+            My <span className="text-gradient">Skills</span>
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full" />
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {skillCategories.map((cat) => (
+              <div key={cat.title} className="p-6 rounded-xl bg-card border border-border">
+                <h3 className="font-heading text-xl font-semibold mb-6 text-primary">{cat.title}</h3>
+                <div className="space-y-5">
+                  {cat.skills.map((skill) => (
+                    <div key={skill.name}>
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center gap-2">
+                          <skill.icon size={16} className="text-accent" />
+                          <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                        </div>
+                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                      </div>
+                      <div className="h-2 rounded-full bg-muted overflow-hidden">
+                        <div
+                          className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-all duration-1000"
+                          style={{ width: isVisible ? `${skill.level}%` : "0%" }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
