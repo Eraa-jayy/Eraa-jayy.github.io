@@ -52,7 +52,7 @@ const socialLinks = [
 
 const HeroSection = () => {
   const typedText = useTypingAnimation(
-    ["Business Analyst", "Project Manager", "Software Developer"],
+    ["Aspiring Business Analyst", "Aspiring Project Manager", "Aspiring Software Developer"],
     80,
     2000,
   );
@@ -120,8 +120,8 @@ const HeroSection = () => {
             {/* Stats bar */}
             <div className="flex items-center gap-0 mt-10 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
               {[
-                { num: "5", label: "Projects done" },
-                { num: "4", label: "Certifications" },
+                { num: "4+", label: "Projects done" },
+                { num: "4+", label: "Certifications" },
                 // { num: "80+", label: "Happy Clients" },
               ].map((stat, i) => (
                 <div

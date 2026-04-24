@@ -34,21 +34,39 @@ const timeline: TimelineItem[] = [
         provider: "Microsoft & LinkedIn",
         link: "https://www.linkedin.com/learning/certificates/b10c9330684a122815a6aa5bfddc6dd4f4cd8f240b6068befdfdf4d1f7eea9be?trk=share_certificate",
       },
+
+      {
+        name: "Business Analysis - Essential Tools & Techniques",
+        provider: "LinkedIn Learning(IIBA)",
+        link: "https://www.linkedin.com/learning/certificates/c7aabbdbbb9839394e2266a8460f4b7e00dd9b30680246d2708a7cda92e89489?trk=share_certificate",
+      },
+
+      {
+        name: "AI in Project Management",
+        provider: "LinkedIn Learning(PMI, NASBA)",
+        link: "https://www.linkedin.com/learning/certificates/60b19fdfcc1733a34230cd33a4237d87335edf113f36ca8b137d827cd739d40f?trk=share_certificate",
+      },
+
+      {
+        name: "Advanced Prompt Engineering Techniques",
+        provider: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning/certificates/9bac5466a66bd63f41c269a5928f60186635639e9ca0c0196c8b8409d1ff55bd?trk=share_certificate",
+      },
       {
         name: "AI Chat Prompts for Business Analysis",
         provider: "IIBA",
         link: "https://www.linkedin.com/learning/certificates/e9df5a87799d4044739e97486bda001e66ac308697ec84802adf28a898c0249b?trk=share_certificate",
       },
-      {
-        name: "Practice Exam 1 for PMI",
-        provider: "PMP",
-        link: "https://www.linkedin.com/learning/certificates/4ba6f56e70108adfce92ea66c7726f3cd303cc17259d619fbaa197a08a9ad690?trk=share_certificate",
-      },
-      {
-        name: "Basics of Prompt Engineering",
-        provider: "LearnDrive Education",
-        link: "#",
-      },
+
+      
+      
+      // {
+      //   name: "Practice Exam 1 for PMI",
+      //   provider: "PMP",
+      //   link: "https://www.linkedin.com/learning/certificates/4ba6f56e70108adfce92ea66c7726f3cd303cc17259d619fbaa197a08a9ad690?trk=share_certificate",
+      // },
+      
+      
     ],
   },
   {
