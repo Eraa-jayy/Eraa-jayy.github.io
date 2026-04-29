@@ -87,47 +87,64 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  required
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  required
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
-                />
-              </div>
-              <div>
-                <textarea
-                  placeholder="Your Message"
-                  required
-                  rows={5}
-                  value={form.message}
-                  onChange={(e) =>
-                    setForm({ ...form, message: e.target.value })
-                  }
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm resize-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium transition-all hover:brightness-110 glow-primary w-full justify-center"
-              >
-                Send Message
-                <Send size={18} />
-              </button>
-            </form>
+            <form
+  onSubmit={(e) => {
+    e.preventDefault();
+
+    const mailtoLink = `mailto:erandajayawardhane25@gmail.com?subject=${encodeURIComponent(
+      form.name
+    )}&body=${encodeURIComponent(
+      `Sender Email: ${form.subject}\n\nMessage:\n${form.message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  }}
+  className="space-y-5"
+>
+  <div>
+    <input
+      type="text"
+      placeholder="Your Name"
+      required
+      value={form.name}
+      onChange={(e) => setForm({ ...form, name: e.target.value })}
+      className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
+    />
+  </div>
+
+  {/* Subject (replaces Your Email) */}
+  <div>
+    <input
+      type="text"
+      placeholder="Your Email"
+      required
+      value={form.subject}
+      onChange={(e) => setForm({ ...form, subject: e.target.value })}
+      className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
+    />
+  </div>
+
+  <div>
+    <textarea
+      placeholder="Your Message"
+      required
+      rows={5}
+      value={form.message}
+      onChange={(e) =>
+        setForm({ ...form, message: e.target.value })
+      }
+      className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm resize-none"
+    />
+  </div>
+
+  <button
+    type="submit"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium transition-all hover:brightness-110 glow-primary w-full justify-center"
+  >
+    Send Message
+    <Send size={18} />
+  </button>
+</form>
           </div>
         </div>
       </div>

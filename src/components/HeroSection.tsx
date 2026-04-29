@@ -3,19 +3,8 @@ import { useTypingAnimation } from "@/hooks/useTypingAnimation";
 import eraaa from "@/assets/eraaa.png";
 
 const socialLinks = [
-  // {
-  //   label: "LinkedIN",
-  //   href: "www.linkedin.com/in/eraa-jayy",
-  //   icon: (
-  //     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
-  //       <rect x="2" y="2" width="20" height="20" rx="5" />
-  //       <circle cx="12" cy="12" r="5" />
-  //       <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
-  //     </svg>
-  //   ),
-  // },
   {
-    label: "LinkeddIn",
+    label: "LinkedIn",
     href: "https://www.linkedin.com/in/eraa-jayy/",
     icon: (
       <svg
@@ -39,22 +28,17 @@ const socialLinks = [
       </svg>
     ),
   },
-  // {
-  //   label: "Behance",
-  //   href: "#",
-  //   icon: (
-  //     <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-  //       <path d="M7.5 11c1.38 0 2.5-.56 2.5-2s-1.12-2-2.5-2H3v4h4.5zM3 13v4.5h5c1.38 0 2.5-.84 2.5-2.25S9.38 13 8 13H3zM15 7h5v1.5h-5zM17.5 10c-2.49 0-4.5 1.79-4.5 4.25S15.01 18.5 17.5 18.5c1.78 0 3.37-.85 4.1-2.25h-2.1c-.36.5-1.09.85-2 .85-1.38 0-2.3-.84-2.45-2.1h6.75c.05-.32.2-.65.2-1 0-2.46-2.01-4-4.5-4zm-2.45 3.5c.28-1.1 1.17-1.85 2.45-1.85s2.17.75 2.45 1.85h-4.9z" />
-  //     </svg>
-  //   ),
-  // },
 ];
 
 const HeroSection = () => {
   const typedText = useTypingAnimation(
-    ["Aspiring Business Analyst", "Aspiring Project Manager", "Aspiring Software Developer"],
+    [
+      "Aspiring Project Manager",
+      
+      "Software Developer",
+    ],
     80,
-    2000,
+    2000
   );
 
   return (
@@ -62,72 +46,69 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Dark geometric background */}
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-secondary/40 to-transparent" />
-        <div className="absolute top-0 right-1/4 w-px h-full bg-border/20 rotate-12 origin-top" />
-        <div className="absolute top-0 right-1/3 w-px h-full bg-border/10 -rotate-6 origin-top" />
-      </div>
 
-      <div className="container mx-auto px-6 relative z-10 pt-20">
+      <div className="container mx-auto px-6 relative z-10 pt-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left content */}
-          <div className="space-y-5">
+
+          {/* LEFT SIDE */}
+          <div className="space-y-4">
             <p className="text-muted-foreground text-lg tracking-wide">
-              Hello! It's{" "}
+              Hello! It's
             </p>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold">
               Eranda Jayawardana
             </h2>
+
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               <span>{typedText}</span>
               <span className="typing-cursor" />
             </h1>
 
-            {/* Social icons */}
-            <div className="flex items-center gap-4 pt-2">
+            {/* SOCIAL */}
+            <div className="flex items-center gap-4 pt-1">
               {socialLinks.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
+                  className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition"
                 >
                   {s.icon}
                 </a>
               ))}
             </div>
 
-            {/* CTA buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            {/* CTA */}
+            <div className="flex flex-wrap gap-3 pt-2">
               <a
                 href="mailto:erandajayawardhane25@gmail.com?subject=Hiring%20Inquiry"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm transition-all hover:brightness-110 glow-primary"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition"
               >
                 Hire Me
               </a>
+
               <a
                 href="/cv.pdf"
                 download="Eranda_Jayawardana_CV.pdf"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-md border border-muted-foreground/40 text-foreground font-semibold text-sm transition-all hover:border-primary hover:text-primary"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-muted-foreground/40 text-foreground font-semibold text-sm hover:border-primary hover:text-primary transition"
               >
                 Download CV
                 <Download size={16} />
               </a>
             </div>
 
-            {/* Stats bar */}
-            <div className="flex items-center gap-0 mt-10 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
+            {/* STATS */}
+            <div className="flex items-center mt-5 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
               {[
                 { num: "4+", label: "Projects done" },
                 { num: "4+", label: "Certifications" },
-                // { num: "80+", label: "Happy Clients" },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
-                  className={`flex-1 py-5 px-6 text-center ${
-                    i < 2 ? "border-r border-border/50" : ""
+                  className={`flex-1 py-4 px-6 text-center ${
+                    i === 0 ? "border-r border-border/50" : ""
                   }`}
                 >
                   <p className="text-2xl font-heading font-bold text-primary">
@@ -141,24 +122,21 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right - profile image */}
-          <div className="flex justify-center items-center relative mt-10 lg:mt-0">
-            {" "}
-            {/* OUTER PULSE RING */}
-            <div className="absolute w-[380px] h-[380px] rounded-full border border-primary/20 animate-ping opacity-40" />
-            {/* SECOND ROTATING RING */}
-            <div className="absolute w-[360px] h-[360px] rounded-full border border-primary/30 animate-spin-slow" />
-            {/* SHARP INNER GLOW RING */}
-            <div className="absolute w-[320px] h-[320px] rounded-full border border-primary/40 shadow-[0_0_40px_rgba(249,115,22,0.25)]" />
-            {/* IMAGE CIRCLE */}
-            <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-2 border-primary/50 z-10 shadow-xl">
-              <img
-                src={eraaa}
-                alt="profile"
-                className="w-full h-full object-cover object-[20%_25%]"
-              />
+          {/* RIGHT SIDE IMAGE */}
+          <div className="flex justify-center items-center relative mt-8 lg:mt-0">
+            <div className="absolute w-[320px] h-[320px] bg-primary rounded-full blur-3xl opacity-30 animate-pulse" />
+
+            <div className="relative w-[280px] h-[280px] rounded-full p-1 bg-gradient-to-tr from-primary via-transparent to-primary/50">
+              <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                <img
+                  src={eraaa}
+                  alt="profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

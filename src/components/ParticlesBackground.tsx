@@ -9,7 +9,7 @@ type Particle = {
   alpha: number;
 };
 
-const OrangeParticles: React.FC = () => {
+const BlueParticles: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const particlesRef = useRef<Particle[]>([]);
   const animationRef = useRef<number | null>(null);
@@ -18,7 +18,7 @@ const OrangeParticles: React.FC = () => {
     const particles: Particle[] = [];
 
     for (let i = 0; i < count; i++) {
-      const radius = Math.random() * 4 + 1; // different sizes
+      const radius = Math.random() * 4 + 1;
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -38,6 +38,15 @@ const OrangeParticles: React.FC = () => {
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+
+    // 🔵 Get color from CSS variable (--primary)
+    const getPrimaryColor = () => {
+      return getComputedStyle(document.documentElement)
+        .getPropertyValue("--primary")
+        .trim();
+    };
+
+    const primaryColor = getPrimaryColor();
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -59,13 +68,20 @@ const OrangeParticles: React.FC = () => {
         p.x += p.dx;
         p.y += p.dy;
 
-        // bounce effect
+        // bounce
         if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 140, 0, ${p.alpha})`; // orange color
+
+        // 🔵 Use HSLA with CSS variable
+        ctx.fillStyle = `hsl(${primaryColor} / ${p.alpha})`;
+
+        // ✨ optional glow effect
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = `hsl(${primaryColor} / 0.5)`;
+
         ctx.fill();
       });
 
@@ -87,16 +103,16 @@ const OrangeParticles: React.FC = () => {
     <canvas
       ref={canvasRef}
       style={{
-  position: "fixed",
-  top: 0,
-  left: 0,
-  width: "100vw",
-  height: "100vh",
-  zIndex: 0,
-  pointerEvents: "none",
-}}
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        zIndex: 0,
+        pointerEvents: "none",
+      }}
     />
   );
 };
 
-export default OrangeParticles;
+export default BlueParticles;

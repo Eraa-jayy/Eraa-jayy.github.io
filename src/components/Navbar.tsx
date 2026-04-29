@@ -50,7 +50,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#home" className="flex items-center">
-            <img src={logo} alt="EJ Logo" className="h-10 w-auto" />
+            <img src={logo} alt="EJ Logo" className="h-12 w-auto" />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
