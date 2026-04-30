@@ -32,13 +32,9 @@ const socialLinks = [
 
 const HeroSection = () => {
   const typedText = useTypingAnimation(
-    [
-      "Aspiring Project Manager",
-      
-      "Software Developer",
-    ],
+    ["Aspiring Project Manager", "Software Developer"],
     80,
-    2000
+    2000,
   );
 
   return (
@@ -50,7 +46,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10 pt-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           {/* LEFT SIDE */}
           <div className="space-y-4">
             <p className="text-muted-foreground text-lg tracking-wide">
@@ -136,7 +131,6 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

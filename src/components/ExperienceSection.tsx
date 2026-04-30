@@ -58,15 +58,11 @@ const timeline: TimelineItem[] = [
         link: "https://www.linkedin.com/learning/certificates/e9df5a87799d4044739e97486bda001e66ac308697ec84802adf28a898c0249b?trk=share_certificate",
       },
 
-      
-      
       // {
       //   name: "Practice Exam 1 for PMI",
       //   provider: "PMP",
       //   link: "https://www.linkedin.com/learning/certificates/4ba6f56e70108adfce92ea66c7726f3cd303cc17259d619fbaa197a08a9ad690?trk=share_certificate",
       // },
-      
-      
     ],
   },
   {

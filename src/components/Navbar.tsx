@@ -42,10 +42,15 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} />
+      <div
+        className="scroll-progress"
+        style={{ width: `${scrollProgress}%` }}
+      />
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
+          scrolled
+            ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -74,7 +79,10 @@ const Navbar = () => {
             Hire Me
           </button>
 
-          <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -87,7 +95,9 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() => scrollTo(link.id)}
                   className={`text-left text-sm font-medium py-2 transition-colors ${
-                    active === link.id ? "text-primary" : "text-muted-foreground"
+                    active === link.id
+                      ? "text-primary"
+                      : "text-muted-foreground"
                   }`}
                 >
                   {link.label}

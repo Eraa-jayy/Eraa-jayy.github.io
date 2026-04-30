@@ -14,7 +14,7 @@ const highlights = [
   },
   {
     icon: Compass,
-    label: "Business Analysis Enthusiast",
+    label: "Good Interest in Business Analysis",
     desc: "Turning requirements into clear solutions",
   },
   {
