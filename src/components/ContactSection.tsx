@@ -9,7 +9,7 @@ const ContactSection = () => {
   const [copied, setCopied] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const email = "erandajayawardhane25@gmail.com";
+  const email = "eraajayy25@gmail.com";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -91,7 +91,7 @@ const ContactSection = () => {
   onSubmit={(e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:erandajayawardhane25@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:eraajayy25@gmail.com?subject=${encodeURIComponent(
       form.name
     )}&body=${encodeURIComponent(
       `Sender Email: ${form.subject}\n\nMessage:\n${form.message}`

@@ -45,24 +45,32 @@ const AboutSection = () => {
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
                 I am a Computer Science undergraduate with a strong interest in
-                both Project Management and Business Analysis. I am passionate
-                about understanding how projects are planned, structured, and
-                delivered effectively while ensuring that business goals are
-                clearly defined and achieved.
+                both Software Engineering and Project Management. I am
+                passionate about designing and developing efficient, scalable,
+                and user-focused software solutions while also understanding how
+                projects are planned, managed, and delivered successfully.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I enjoy analyzing problems, gathering requirements, and
-                translating them into clear, actionable solutions. Alongside my
-                technical background, I am developing strong communication,
-                teamwork, and organizational skills, which are essential for
-                coordinating between stakeholders and development teams.
+                I enjoy building applications using modern technologies and
+                solving real-world problems through clean, maintainable code. At
+                the same time, I am interested in how software projects are
+                structured, how teams collaborate, and how technical work aligns
+                with business goals.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My goal is to build a career in Project Management or Business
-                Analysis where I can contribute to managing projects efficiently
-                and improving business processes.
+                Alongside my technical skills, I am continuously developing my
+                abilities in communication, teamwork, problem-solving, and
+                organization, which help me contribute effectively in both
+                development and coordination roles.
+              </p>
+
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                My goal is to grow as a Software Engineer while also gaining
+                experience in Project Management, enabling me to bridge the gap
+                between technical implementation and project delivery to create
+                impactful and well-executed solutions.
               </p>
             </div>
 

@@ -78,14 +78,14 @@ const HeroSection = () => {
             {/* CTA */}
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="mailto:erandajayawardhane25@gmail.com?subject=Hiring%20Inquiry"
+                href="mailto:eraajayy25@gmail.com?subject=Hiring%20Inquiry"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition"
               >
                 Hire Me
               </a>
 
               <a
-                href="/cv.pdf"
+                href="/ERANDA_JAYAWARDANA_PM.pdf"
                 download="Eranda_Jayawardana_CV.pdf"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-muted-foreground/40 text-foreground font-semibold text-sm hover:border-primary hover:text-primary transition"
               >

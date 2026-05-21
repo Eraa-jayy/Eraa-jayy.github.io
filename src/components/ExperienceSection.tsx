@@ -87,7 +87,7 @@ const ExperienceSection = () => {
         >
           {/* TITLE */}
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4">
-            Education & <span className="text-primary">Experience</span>
+            Education 
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full" />
 
