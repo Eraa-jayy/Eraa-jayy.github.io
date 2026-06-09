@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // 1. Moved to the top level so it applies to the production build
-  base: "./", 
+  // Change this to a single slash for root domain deployment
+  base: "/", 
 
   server: {
     host: "::",
