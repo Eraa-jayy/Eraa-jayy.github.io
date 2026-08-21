@@ -1,27 +1,27 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { GraduationCap, Briefcase, Compass, Code2 } from "lucide-react";
+import { GraduationCap, Cpu, Terminal, Code2 } from "lucide-react";
 
 const highlights = [
   {
-    icon: GraduationCap,
-    label: "Computer Science Undergraduate",
-    desc: "Building a strong foundation in software & systems",
-  },
-  {
-    icon: Briefcase,
-    label: "Project Management Focus",
-    desc: "Interested in planning and leading successful projects",
-  },
-  {
-    icon: Compass,
-    label: "Good Interest in Business Analysis",
-    desc: "Turning requirements into clear solutions",
-  },
-  {
-    icon: Code2,
-    label: "Software Developer",
-    desc: "Designing, developing, and optimizing applications with clean and maintainable code",
-  },
+  icon: GraduationCap,
+  label: "Computer Science Undergraduate",
+  desc: "Building a strong theoretical foundation in software systems and algorithms",
+},
+{
+  icon: Code2,
+  label: "Full-Stack Development",
+  desc: "Architecting modern web applications with scalable frontend and backend tech",
+},
+{
+  icon: Cpu,
+  label: "Clean Code & Architecture",
+  desc: "Designing modular, maintainable software systems using robust design patterns",
+},
+{
+  icon: Terminal,
+  label: "Software Engineer",
+  desc: "Solving complex technical problems and building efficient, high-performance solutions",
+},
 ];
 
 const AboutSection = () => {
@@ -44,33 +44,31 @@ const AboutSection = () => {
             {/* Text Section */}
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I am a Computer Science undergraduate with a strong interest in
-                both Software Engineering and Project Management. I am
-                passionate about designing and developing efficient, scalable,
-                and user-focused software solutions while also understanding how
-                projects are planned, managed, and delivered successfully.
+                I am a Computer Science undergraduate and Software Engineer
+                focused on building scalable, efficient, and user-centered web
+                applications. My passion lies in solving complex technical
+                problems through clean architecture and modern development
+                practices.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I enjoy building applications using modern technologies and
-                solving real-world problems through clean, maintainable code. At
-                the same time, I am interested in how software projects are
-                structured, how teams collaborate, and how technical work aligns
-                with business goals.
+                I specialize in full-stack development, turning requirements
+                into clean, maintainable, and well-structured code. I enjoy
+                working across both frontend and backend systems, ensuring high
+                performance, security, and seamless user experiences.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Alongside my technical skills, I am continuously developing my
-                abilities in communication, teamwork, problem-solving, and
-                organization, which help me contribute effectively in both
-                development and coordination roles.
+                With a strong foundation in software design patterns and
+                algorithmic problem-solving, I continuously refine my coding
+                standards to build robust systems designed for long-term
+                maintainability and performance.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My goal is to grow as a Software Engineer while also gaining
-                experience in Project Management, enabling me to bridge the gap
-                between technical implementation and project delivery to create
-                impactful and well-executed solutions.
+                My goal is to grow as a high-impact Software Engineer,
+                continually mastering modern technologies and contributing to
+                the creation of powerful, reliable digital products.
               </p>
             </div>
 

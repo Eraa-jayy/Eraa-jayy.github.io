@@ -24,6 +24,13 @@ import {
   Brackets,
   Coffee,
   Cpu,
+  Network,
+  Box,
+  Cloud,
+  RefreshCw,
+  Terminal,
+  CheckSquare,
+  ShieldCheck
 } from "lucide-react";
 
 const skillCategories = [
@@ -31,48 +38,51 @@ const skillCategories = [
     title: "Technical Skills",
     skills: [
       { name: "Java / Spring Boot", level: 75, icon: Coffee },
+      { name: "TypeScript / JavaScript", level: 85, icon: Code2 },
+      { name: "React.js / Next.js", level: 80, icon: Layers },
+      { name: "Tailwind CSS / HTML / CSS", level: 90, icon: Brackets },
       { name: "C", level: 85, icon: Cpu },
-      // { name: "C#", level: 75, icon: Code2 },
-      { name: "HTML/CSS/JS", level: 90, icon: Brackets },
-      { name: "React.js / Tailwind CSS", level: 80, icon: Layers },
-      { name: "Next.js", level: 80, icon: Rocket },
+      { name: "RESTful APIs", level: 85, icon: Network },
       { name: "MongoDB", level: 75, icon: Leaf },
       { name: "MySQL", level: 75, icon: Database },
-      // { name: "Python", level: 70, icon: Code },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      { name: "Docker", level: 75, icon: Box },
+      { name: "AWS (S3, EC2)", level: 70, icon: Cloud },
+      { name: "CI/CD Pipelines", level: 75, icon: RefreshCw },
+      { name: "Vercel", level: 85, icon: Rocket },
     ],
   },
   {
     title: "Tools & Platforms",
     skills: [
       { name: "Git & GitHub", level: 85, icon: GitBranch },
-      // { name: "Trello / Jira", level: 90, icon: KanbanSquare },
-      { name: "Trello", level: 90, icon: Trello },
-      { name: "Jira", level: 90, icon: Briefcase },
+      { name: "Jira / Trello", level: 90, icon: Briefcase },
       { name: "Figma", level: 75, icon: Figma },
       { name: "Draw.io", level: 90, icon: Workflow },
-
-      // { name: "Spring Boot", level: 80, icon: Server },
-      { name: "Vercel", level: 85, icon: Rocket },
-
-      { name: "MS Office Suite", level: 90, icon: FileSpreadsheet },
-      { name: "Windows / Linux", level: 85, icon: Monitor },
+      { name: "Postman", level: 85, icon: Terminal },
+      { name: "Linux / Windows", level: 85, icon: Monitor },
     ],
   },
   {
     title: "Methodologies & Practices",
     skills: [
-      { name: "Agile", level: 85, icon: Workflow },
-      { name: "Scrum", level: 85, icon: Users },
+      { name: "Agile & Scrum", level: 85, icon: Users },
       { name: "SDLC", level: 90, icon: GitBranch },
+      { name: "Object-Oriented Programming (OOP)", level: 90, icon: Code2 },
+      { name: "Unit Testing / TDD", level: 75, icon: CheckSquare },
     ],
   },
   {
     title: "Soft Skills",
     skills: [
-      { name: "Leadership", level: 85, icon: Users },
-      { name: "Communication", level: 90, icon: MessageSquare },
       { name: "Problem Solving", level: 88, icon: Lightbulb },
       { name: "Team Collaboration", level: 92, icon: Users },
+      { name: "Communication", level: 90, icon: MessageSquare },
+      { name: "Leadership", level: 85, icon: ShieldCheck },
     ],
   },
 ];

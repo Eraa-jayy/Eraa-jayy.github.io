@@ -32,7 +32,7 @@ const socialLinks = [
 
 const HeroSection = () => {
   const typedText = useTypingAnimation(
-    ["Aspiring Project Manager", "Software Developer"],
+    ["Aspiring Software Engineer"],
     80,
     2000,
   );
@@ -78,14 +78,14 @@ const HeroSection = () => {
             {/* CTA */}
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="mailto:eraajayy25@gmail.com?subject=Hiring%20Inquiry"
+                href="mailto:eraajayy625@gmail.com?subject=Hiring%20Inquiry"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition"
               >
                 Hire Me
               </a>
 
               <a
-                href="/ERANDA_JAYAWARDANA_PM.pdf"
+                href="/ERANDA_JAYAWARDANA_SE.pdf"
                 download="Eranda_Jayawardana_CV.pdf"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-muted-foreground/40 text-foreground font-semibold text-sm hover:border-primary hover:text-primary transition"
               >
@@ -97,7 +97,7 @@ const HeroSection = () => {
             {/* STATS */}
             <div className="flex items-center mt-5 bg-card/60 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
               {[
-                { num: "4+", label: "Projects done" },
+                { num: "6+", label: "Projects done" },
                 { num: "4+", label: "Certifications" },
               ].map((stat, i) => (
                 <div

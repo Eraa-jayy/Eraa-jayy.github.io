@@ -13,7 +13,21 @@ const projects = [
       "REST APIs",
     ],
     github: "https://github.com/IndikaMadhushan/Healthify-FrontEnd",
-    demo: "#",
+    // demo: "#",
+  },
+  {
+    title: "UniNest - Smart Hostel Management System(Group Project)",
+    description:
+      "A comprehensive university hostel management platform that streamlines operations for students, admins, wardens, sub-wardens, and maintenance staff. Features role-based access for room allocation, complaint tracking, and administrative oversight.",
+    tech: [
+      "React.js / Tailwind CSS",
+      "Java / SpringBoot",
+      "MySQL",
+      "REST APIs",
+    ],
+    github:
+      "https://github.com/Eraa-jayy/Smart-Hostel-Management-System-Frontend",
+    // demo: "https://smart-hostel-management-system.vercel.app/",
   },
   {
     title: "Police Information Management System (Group Project)",
@@ -34,11 +48,19 @@ const projects = [
   },
 
   {
-    title: "InTime - Smart Attendance Tracking System",
+    title: "Smart Attendance Tracking System",
     description:
       "A Face Recognition Attendance System is a full-stack application that automates student attendance using Python-based face recognition for real-time identification, combined with a MERN stack web app for user management, authentication, and attendance tracking, with data stored in MongoDB Atlas and a TailwindCSS-based admin dashboard.",
     tech: ["React.js / Tailwind CSS", "Python Face API", "MongoDB"],
     github: "https://github.com/Eraa-jayy/Text-to-Speech-Converter",
+  },
+  {
+    title: "AI Debate Partner",
+    description:
+      "An interactive AI-powered debate platform where users can engage in structured arguments against an adaptive AI opponent. Features real-time counter-arguments, logic analysis, and argument scoring using the Gemini API.",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Gemini API"],
+    github: "https://github.com/Eraa-jayy/AI-Debate-Tool",
+    demo: "https://ai-debate-partner.vercel.app/",
   },
   {
     title: "Text-to-Speech Converter",
@@ -48,22 +70,7 @@ const projects = [
     github: "https://github.com/Eraa-jayy/Text-to-Speech-Converter",
     demo: "https://text-to-speech-converter-murex.vercel.app/",
   },
-  // {
-  //   title: "Eranda Jayawardana - Personal Portfolio Website",
-  //   description:
-  //     "A modern, responsive personal portfolio built with React and TypeScript showcasing projects and skills.",
-  //   tech: ["React.js / Tailwind CSS", "TypeScript"],
-  //   github: "https://github.com/Eraa-jayy/EraaJayyPortfolio.git",
-  //   demo: "https://erandajayawardana.vercel.app/",
-  // },
-  // {
-  //   title: "DineMate - Restaurant Point of Sale System",
-  //   description:
-  //   "A modern, responsive Restaurant Point of Sale (POS) system built using Next.js, designed to manage orders, billing, and restaurant operations efficiently.",
-  //   tech: ["React.js / Tailwind CSS", "Next.js", "MongoDB"],
-  //   github: "#",
-  //   demo: "#",
-  // },
+  
 ];
 
 const ProjectsSection = () => {
@@ -110,12 +117,12 @@ const ProjectsSection = () => {
                   >
                     <Github size={16} /> Code
                   </a>
-                  <a
+                  {/* <a
                     href={project.demo}
                     className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     <ExternalLink size={16} /> Demo
-                  </a>
+                  </a> */}
                 </div>
               </div>
             ))}
